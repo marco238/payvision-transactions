@@ -1,0 +1,32 @@
+{
+  "name": "payvision-transactions",
+  "version": "1.0.0",
+  "description": "Payvision Transactions App made with LitElement",
+  "main": "index.js",
+  "scripts": {
+    "copyindex": "cp index.html build",
+    "copywc": "cp -r node_modules/@webcomponents/webcomponentsjs/bundles build && cp node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js build",
+    "build": "rm -rf build && mkdir build && npm run copyindex && npm run copywc && rollup -c -w",
+    "dev": "npm run build"
+  },
+  "author": "Me",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.2.3",
+    "@babel/plugin-proposal-decorators": "^7.2.3",
+    "@webcomponents/webcomponentsjs": "^2.2.4",
+    "rollup": "^1.1.0",
+    "rollup-plugin-babel": "^4.3.0",
+    "rollup-plugin-livereload": "^1.0.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-serve": "^1.0.1"
+  },
+  "dependencies": {
+    "@vaadin/router": "^1.2.0",
+    "lit-element": "^2.1.0",
+    "pwa-helpers": "^0.9.1",
+    "redux": "^4.0.1",
+    "wc-epic-spinners": "^1.0.0"
+  }
+}
