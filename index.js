@@ -1,8 +1,11 @@
 import { Router } from '@vaadin/router';
 
+import './src/navbar-element.js';
+import './src/home-element.js';
 import './src/fetcher-element.js';
-import './src/stats-element.js';
 import './src/about-element.js';
+import './src/404-element.js';
+
 
 window.addEventListener('load', () => { 
   initRouter();
@@ -13,23 +16,23 @@ function initRouter() {
   router.setRoutes([
     {
       path: '/',
-      redirect: '/fetcher'
+      redirect: '/home'
     },
     {
-      path: '/fetcher',
+      path: '/home',
+      component: 'home-element'
+    },
+    {
+      path: '/transactions',
       component: 'fetcher-element'
     },
     {
-      path: '/stats',
-      component: 'stats-element'
-    },
-    {
       path: '/about',
-      component: 'about-element'
+      component: 'about-element',
     },
     {
       path: '(.*)', 
-      component: 'not-found-view'
+      component: 'not-found-element'
     }
   ]);
 }

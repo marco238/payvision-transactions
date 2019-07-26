@@ -1,38 +1,31 @@
 import {
-  UPDATE_PATH,
-  ADD_FILMS,
-  UPDATE_TOPIC,
-  DELETE_FILM
+  ADD_TRANSACTIONS,
+  UPDATE_CURRENCY,
+  UPDATE_TRANSACTION_TYPE
 } from './actions.js';
 
 const INITIAL_STATE = {
-  path: '/',
-  topic: '',
-  films: []
+  currency: '',
+  transactionType: '',
+  transactions: []
 };
 
 export const reducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
-    case UPDATE_PATH:
+    case ADD_TRANSACTIONS:
       return {
         ...state,
-        path: action.path
+        transactions: action.transactions
         };
-    case ADD_FILMS:
+    case UPDATE_CURRENCY:
       return {
         ...state,
-        films: action.films
-        };
-    case UPDATE_TOPIC:
-      return {
-        ...state,
-        topic: action.topic
+        currency: action.currency
       };
-    case DELETE_FILM:
-      action.films.splice(action.index, 1);
+    case UPDATE_TRANSACTION_TYPE:
       return {
         ...state,
-        films: action.films
+        transactionType: action.transactionType
       };
     default:
     return state;

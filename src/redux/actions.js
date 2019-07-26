@@ -1,41 +1,24 @@
-export const LOG_IN = 'LOG_IN';
-export const UPDATE_PATH = 'UPDATE_PATH';
-export const ADD_FILMS = 'ADD_FILMS';
-export const UPDATE_TOPIC = 'UPDATE_TOPIC';
-export const DELETE_FILM = 'DELETE_FILM';
+export const ADD_TRANSACTIONS = 'ADD_TRANSACTIONS';
+export const UPDATE_CURRENCY = 'UPDATE_CURRENCY';
+export const UPDATE_TRANSACTION_TYPE = 'UPDATE_TRANSACTION_TYPE';
 
-export const logIn = (logged) => {
+export const addTransactions = (transactions) => {
   return {
-    type: LOG_IN,
-    logged
+    type: ADD_TRANSACTIONS,
+    transactions
   };
 };
 
-export const updatePath = (path) => {
+export const updateCurrency = (currency) => {
   return {
-    type: UPDATE_PATH,
-    path
+    type: UPDATE_CURRENCY,
+    currency
   };
 };
 
-export const addFilms = (films) => {
+export const updateTransactionType = (transactionType) => {
   return {
-    type: ADD_FILMS,
-    films
-  };
-};
-
-export const updateTopic = (topic) => {
-  return {
-    type: UPDATE_TOPIC,
-    topic
-  };
-};
-
-export const deleteFilm = (films, index) => {
-  return {
-    type: DELETE_FILM,
-    films,
-    index
+    type: UPDATE_TRANSACTION_TYPE,
+    transactionType
   };
 };

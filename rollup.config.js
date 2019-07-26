@@ -2,6 +2,7 @@ import resolve from 'rollup-plugin-node-resolve';
 import babel from 'rollup-plugin-babel';
 import serve from 'rollup-plugin-serve';
 import livereload from 'rollup-plugin-livereload';
+import copy from 'rollup-plugin-copy';
 
 export default {
 	input: ['index.js'],
@@ -18,6 +19,11 @@ export default {
 			contentBase: `build`,
 			historyApiFallback: true
     }),
-    livereload(`build`)
+		livereload(`build`),
+		copy({
+      targets: [
+        { src: 'assets/images/*', dest: 'build/assets/images' }
+      ]
+    })
 	]
 };
