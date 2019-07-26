@@ -18,16 +18,16 @@
     "@webcomponents/webcomponentsjs": "^2.2.4",
     "rollup": "^1.1.0",
     "rollup-plugin-babel": "^4.3.0",
-    "rollup-plugin-livereload": "^1.0.0",
-    "rollup-plugin-node-resolve": "^4.0.0",
     "rollup-plugin-copy": "^3.1.0",
+    "rollup-plugin-livereload": "^1.0.0",
+    "rollup-plugin-node-resolve": "^4.2.4",
     "rollup-plugin-serve": "^1.0.1"
   },
   "dependencies": {
     "@vaadin/router": "^1.2.0",
+    "dotenv": "^8.0.0",
     "lit-element": "^2.1.0",
     "pwa-helpers": "^0.9.1",
-    "redux": "^4.0.1",
-    "wc-epic-spinners": "^1.0.0"
+    "redux": "^4.0.1"
   }
 }

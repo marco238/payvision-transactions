@@ -6495,6 +6495,8 @@ class ListElement extends LitElement {
 
 customElements.define('list-element', ListElement);
 
+require('dotenv').config();
+
 class FetcherElement extends connect(store)(LitElement) {
   static get styles() {
     return [SharedStyles, css`
@@ -6630,6 +6632,7 @@ class FetcherElement extends connect(store)(LitElement) {
 
   firstUpdated() {
     this.doSearch();
+    console.log(process.env);
   }
 
   doSearch() {
