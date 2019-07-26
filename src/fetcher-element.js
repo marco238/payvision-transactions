@@ -142,7 +142,7 @@ class FetcherElement extends connect(store)(LitElement) {
 
   doSearch() {
     let headers = new Headers();
-    headers.set('Authorization', 'Basic ' + window.btoa('' + ':' + '')); //This should be an 'env var'
+    headers.set('Authorization', 'Basic ' + window.btoa('code-challenge' + ':' + 'payvisioner')); //This should be an 'env var'
 
     let url = `https://jovs5zmau3.execute-api.eu-west-1.amazonaws.com/prod/transactions`;
     if(this.action != '') {

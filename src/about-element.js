@@ -50,7 +50,7 @@ class AboutElement extends LitElement {
 
         h3 {
           text-decoration: underline;
-          margin-top: 60px;
+          margin-top: 30px;
         }
 
         ul {
@@ -63,7 +63,7 @@ class AboutElement extends LitElement {
           display: flex;
           justify-content: space-around;
           align-items: center;
-          margin-top: 20px;
+          margin-top: 10px;
         }
         
         .social-icons {
