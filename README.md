@@ -2,7 +2,7 @@
 
 # Rendering Transactions
 
-This is a website for Payvision`s frontend selection process. It uses [LitElement](https://lit-element.polymer-project.org/guide), [Redux](https://redux.js.org/introduction/getting-started), [Pwa-helpers](https://github.com/Polymer/pwa-helpers), [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/), [CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/), [Vaadin](https://www.npmjs.com/package/@vaadin/router) and [Rollup](https://www.npmjs.com/package/rollup). 
+This is a website that simulates transactions. It uses [LitElement](https://lit-element.polymer-project.org/guide), [Redux](https://redux.js.org/introduction/getting-started), [Pwa-helpers](https://github.com/Polymer/pwa-helpers), [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/), [CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/), [Vaadin](https://www.npmjs.com/package/@vaadin/router) and [Rollup](https://www.npmjs.com/package/rollup). 
 
 ## Setup
 
